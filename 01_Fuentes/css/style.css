@@ -1,0 +1,46 @@
+@import url('https://fonts.googleapis.com/css?family=Bowlby+One+SC');
+@font-face { 
+    font-family: 'Indie Flower';
+    src: url('../assets/IndieFlower.ttf');
+};
+*,
+*::after, *::before,
+*:after, *:before {
+    box-sizing: border-box;
+}
+
+body {
+    background-color: blanchedalmond;
+}
+
+.icono_inicio {
+    position: relative;
+    font-size: 3rem;
+    padding: 1rem;
+    background-color: brown;
+    border-radius: 50%;
+    color: blue;
+    cursor: pointer;
+}
+.icono_inicio:hover {
+    background-color: olive;
+    color:tomato;
+    font-size: 4rem;
+    
+} 
+
+h1 {
+    font-family: 'Bowlby One SC', 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+h2 {
+    font-family: Oswald, Georgia, 'Times New Roman', Times, serif;
+}
+
+h3 {
+    font-family: 'Indie Flower'
+}
+
+p {
+    font-family: Lobster, Verdana, Arial, sans-serif;
+}
