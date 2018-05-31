@@ -1,0 +1,16 @@
+html {
+    font-size: 40px;
+}
+/* rem = 40  aqui em = 40*/
+section {
+    font-size: 0.5rem;
+}
+article {
+    font-size: 0.5rem;
+}
+div {
+    font-size: 0.5rem;
+}
+p {
+    font-size: 0.5rem;
+}
