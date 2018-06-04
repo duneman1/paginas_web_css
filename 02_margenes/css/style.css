@@ -1,0 +1,88 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    background-color: aliceblue;
+    color: brown;
+}
+header {
+    width: 50%;
+    float: left;
+    background-color: maroon;
+    color:bisque;
+    line-height: 1rem;
+}
+header h1 {
+    text-align: center;
+}
+/*
+nav -> ul -> li -> a
+*/
+nav{
+    background-color: maroon;
+
+
+    /* border: 1px solid silver;  */
+}
+nav ul {
+    list-style: none;
+    /* border: 1px solid red; */
+    width: 50%;
+    margin: 0;
+    padding: 0;
+    overflow: auto;
+}
+
+nav li {
+    display: block;
+    float: left;
+    width: 18%;
+    
+    
+    
+    
+}
+nav li:not(:last-child) {
+    margin-right: 2.5%;
+}
+
+nav a {
+
+    display: inline-block;
+    color: inherit;
+    /* text-decoration: underline; vale para los dos */
+    text-decoration: none;
+    padding: 1rem;
+    border: solid gray 1px;
+    border-radius: 1rem;
+    background-color: bisque;
+    width: 100%;
+    text-align: center;
+}
+
+.clearfix {
+    clear: both;
+}
+div.wrapper {
+   
+    margin-left: 3rem;
+    margin-top: 2rem;
+}
+section.sombras h2 {
+    text-shadow: 0.5rem 0.5rem 0.5rem green;
+}
+section.sombras div {
+    
+    width: 10rem;
+    height: 10rem;
+    background-color: silver;
+    /* border: 2px solid red; */
+    box-shadow: 1rem 1rem 0.5rem 0.5rem green;
+    border-radius: 50%;
+}
+section.sombras img{
+    border-radius: 50%;
+    width: 20%;
+    box-shadow: 1rem 1rem 0.5rem 0.5rem green;
+}

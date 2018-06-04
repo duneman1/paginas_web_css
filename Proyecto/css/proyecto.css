@@ -1,0 +1,23 @@
+*  {
+    box-sizing: border-box;
+}
+
+body {
+    margin-top: 0rem;
+    background-color: beige;
+}
+
+header {
+    height:  4rem;
+    background-color: brown;
+    color: aliceblue;
+
+
+}
+
+h1 {
+    text-align: center;
+    line-height: 4rem;
+    margin-top: 0rem;
+    
+}

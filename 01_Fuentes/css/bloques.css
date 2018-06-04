@@ -1,0 +1,26 @@
+*  {
+    box-sizing: border-box;
+}
+
+/* body {
+    font-size: 0rem;
+} */
+
+body {
+    width: 90%;
+    margin-left: auto;
+    margin-right: auto;
+    height: 80vh;
+    background-color: darkgrey;
+}
+
+p {
+    /*font-size: 1rem;*/
+    margin-right: -4px;
+    width: 25%;
+    display: inline-block;
+    background-color: beige;
+    border: 1px solid;
+    padding: 0.5rem;
+    vertical-align: middle;
+}

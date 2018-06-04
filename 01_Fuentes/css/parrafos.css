@@ -1,0 +1,25 @@
+body { 
+    margin-top: 0rem;
+}
+
+header {
+    
+    height: 4rem;
+    background-color: aquamarine;
+    color: darkcyan;
+}
+
+h1 {
+    text-align: center;
+    line-height: 4rem;
+    margin-top: 0rem;
+
+}
+p {
+    text-align: justify;
+    width: 50%;
+    /* margin: 0 auto;  das dos instruciones arriba y abajo - izquierda y derecha */ 
+    margin-left: auto;
+    margin-right: auto;
+    text-indent: -3rem;
+}
