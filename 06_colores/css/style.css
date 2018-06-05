@@ -1,0 +1,21 @@
+section>div {
+    width: 8rem;
+    height: 8rem;
+    background-color: rgb(172, 255, 47);
+    opacity: 0.5;
+}
+section>div>div {
+    width: 4rem;
+    height: 4rem;
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+    margin-left: 1rem;
+    border: 1px solid;
+    background-color: violet;
+    opacity: 1;
+}
+aside>div {
+    width: 8rem;
+    height: 8rem;
+    background: linear-gradient(to left, chartreuse, blueviolet );
+}

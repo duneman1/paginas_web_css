@@ -1,0 +1,41 @@
+/* Reset */
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 5%;
+}
+
+p {
+    --margen: 2.3%;
+    margin: 0;
+    padding: 0;
+}
+
+/* Layout */
+
+p {
+    width: calc(calc(100% - calc(var(--margen)*3))/4);
+    float: left;
+    padding: 1.5rem;    
+}
+
+p:not(:last-child) {
+    margin-right: var(--margen);
+} 
+
+p:first-child {
+    /* border-left: 1px solid;  */
+}
+
+p:nth-child(odd) {
+    background-color: aqua;
+    border: 1px solid bisque;
+}
+
+p:nth-child(even) {
+    background-color: bisque;
+    border: 1px solid aqua;
+}

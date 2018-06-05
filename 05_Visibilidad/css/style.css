@@ -1,0 +1,40 @@
+* {
+    box-sizing: border-box
+}
+body {
+    margin: 2rem;
+}
+
+h2:hover::after {
+    content: url("./assets/ok.gif")
+}
+section div.wrapper {
+    background-color: rgba(255, 228, 196, 0.486);
+    overflow: auto;
+}
+section div.wrapper div {
+    float: left;
+}
+
+section div.text-wrapper {
+    width: 70%;
+    padding: 2rem;
+    
+}
+
+section div.img-wrapper {
+    width: 25%;
+    padding: 2rem;
+    /* display: none; */
+    visibility: hidden;
+}
+
+section div.wrapper:hover div.img-wrapper {
+    /* display: block; */
+    visibility: visible;
+}
+
+section div.img-wrapper img {
+    width: 100%;
+    max-width: 100%;
+}
