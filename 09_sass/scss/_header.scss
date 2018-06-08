@@ -1,0 +1,24 @@
+$fondo: #7fffd4;
+$fondo1: yellow;
+$fondo2: mix($fondo1, $fondo);
+/* $fondo2: $fondo + $fondo1; */
+$margen1: 20%;
+$margen2: 10%;
+$margen3: $margen1 + $margen2;
+header{
+    width: 60%;
+    margin-left: $margen3;
+    margin-right: auto;  
+    @import 'header2.scss';
+
+    &:hover {
+        background-color: saturate(darken($fondo2,30), 10);
+    };
+
+    &:hover p {
+        color: violet;
+    };
+}
+
+
+

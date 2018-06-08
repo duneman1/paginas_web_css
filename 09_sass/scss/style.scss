@@ -18,18 +18,35 @@ header p {
 
 /*Esto es sass*/
 
+* {
+    box-sizing: border-box;
+}
+
 body {
     margin: 2rem;
+    padding: 2rem;
     background-color: bisque;
-    header{
+    /* header{
         width: 60%;
         margin-left: auto;
         margin-right: auto;
         h1 {
             color: brown;
+            font-size: 3rem;
         }
         p {
             font-size: 1.5rem;
         }
+    } */
+}
+ /*Aqui va el header*/
+ //Esto es un comentario sass que se ignora al compilar.
+
+@import 'header.scss';
+
+footer {
+    address {};
+    >p {
+        color: lime;
     }
 }

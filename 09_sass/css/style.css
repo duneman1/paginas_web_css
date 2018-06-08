@@ -16,20 +16,51 @@ header p {
 }
  */
 /*Esto es sass*/
+* {
+  box-sizing: border-box;
+}
+
 body {
   margin: 2rem;
+  padding: 2rem;
   background-color: bisque;
+  /* header{
+      width: 60%;
+      margin-left: auto;
+      margin-right: auto;
+      h1 {
+          color: brown;
+          font-size: 3rem;
+      }
+      p {
+          font-size: 1.5rem;
+      }
+  } */
 }
-body header {
+
+/*Aqui va el header*/
+/* $fondo2: $fondo + $fondo1; */
+header {
   width: 60%;
-  margin-left: auto;
+  margin-left: 30%;
   margin-right: auto;
 }
-body header h1 {
+header h1 {
   color: brown;
+  font-size: 3rem;
 }
-body header p {
+header p {
   font-size: 1.5rem;
+}
+header:hover {
+  background-color: #77d000;
+}
+header:hover p {
+  color: violet;
+}
+
+footer > p {
+  color: lime;
 }
 
 /*# sourceMappingURL=css/style.css.map */
