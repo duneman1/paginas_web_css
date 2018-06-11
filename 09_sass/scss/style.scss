@@ -44,6 +44,61 @@ body {
 
 @import 'header.scss';
 
+
+/*Ejemplo de @extend
+section {
+    h2 {
+        color: maroon;
+        font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    }
+    p{
+        @extend h2;
+        font-size: 1.1rem;
+    }
+}
+*/
+
+/*Ejemplo de @mixin*/
+/* @mixin x {
+    color: maroon;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+} */ 
+
+@mixin x {
+    color: maroon;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+} 
+
+@mixin centrar($fuente, $ancho:80%) {
+    width: $ancho;
+    margin-left: auto;
+    margin-right: auto;
+    font-size: $fuente;
+}
+
+section {
+    h2 {
+        @include x;
+    }
+    p{
+        @include x;
+        font-size: 1.1rem;
+
+        &:nth-child(1){
+            @include centrar (50%);
+        };
+
+        &:nth-child(2){
+            @include centrar(1rem, 70%);
+        };
+
+        &:nth-child(3) { 
+            @include centrar(1.5rem)
+        }
+        
+    }
+}
+
 footer {
     address {};
     >p {

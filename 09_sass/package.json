@@ -1,16 +1,16 @@
 {
   "name": "09_sass",
   "version": "1.0.0",
-  "description": "",
+  "description": "Jugando con sass y automatismos",
   "main": "index.js",
   "scripts": {
-    "start":"parallelshell \"npm run server\" \"npm run sass:watch \"",
-    "server": "http-server",
+    "start":"parallelshell \"npm run server\" \"npm run sass:watch\"",
+    "server": "http-server ../",
     "sass": "sass scss:css",
     "test": "echo \"Error: no test specified\" && exit 1",
     "sass:watch":"nodemon -e scss -x \"sass scss:css\""
   },
-  "keywords": [],
-  "author": "",
+  "keywords": ["HTML", "CSS", "JS"],
+  "author": "Jose Maria",
   "license": "ISC"
 }

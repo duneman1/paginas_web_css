@@ -53,10 +53,55 @@ header p {
   font-size: 1.5rem;
 }
 header:hover {
-  background-color: #77d000;
+  background-color: #78d100;
 }
 header:hover p {
   color: violet;
+}
+
+/*Ejemplo de @extend
+section {
+    h2 {
+        color: maroon;
+        font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    }
+    p{
+        @extend h2;
+        font-size: 1.1rem;
+    }
+}
+*/
+/*Ejemplo de @mixin*/
+/* @mixin x {
+    color: maroon;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+} */
+section h2 {
+  color: maroon;
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+}
+section p {
+  color: maroon;
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+  font-size: 1.1rem;
+}
+section p:nth-child(1) {
+  width: 80%;
+  margin-left: auto;
+  margin-right: auto;
+  font-size: 50%;
+}
+section p:nth-child(2) {
+  width: 70%;
+  margin-left: auto;
+  margin-right: auto;
+  font-size: 1rem;
+}
+section p:nth-child(3) {
+  width: 80%;
+  margin-left: auto;
+  margin-right: auto;
+  font-size: 1.5rem;
 }
 
 footer > p {
