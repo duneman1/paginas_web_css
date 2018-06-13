@@ -53,7 +53,8 @@ nav {
   /* width: 50%; */
   /* No hace falta, porque flota a la derecha y cierra el espacio*/
   /* float: right; */
-  position: fixed;
+  position: absolute;
+  z-index: 10;
   top: 0;
   right: 0;
   background-image: url("../assets/home-bg.jpg");
@@ -63,14 +64,29 @@ nav ul {
   list-style: none;
   padding: 0;
 }
-nav li {
+nav > ul > li {
   display: inline-block;
+  position: relative;
 }
-nav li ul {
+nav > ul > li > ul {
   display: none;
 }
-nav li:hover ul {
+nav > ul > li:hover > ul {
   display: block;
+  position: absolute;
+  top: 2rem;
+}
+nav > ul > li:hover > ul > li {
+  display: block;
+}
+nav > ul > li:hover > ul > li > ul {
+  /* display:none; */
+}
+nav > ul > li:hover > ul > li:hover > ul {
+  display: block;
+  position: absolute;
+  top: 2rem;
+  left: 4rem;
 }
 nav a {
   color: inherit;

@@ -74,7 +74,8 @@ nav {
     /* position: relative; */
     /* width: 50%; */ /* No hace falta, porque flota a la derecha y cierra el espacio*/
     /* float: right; */
-    position: fixed;
+    position: absolute;
+    z-index: 10;
     top: 0;
     right: 0;
     background-image: url('../assets/home-bg.jpg');
@@ -83,14 +84,37 @@ nav {
         list-style: none;  
         padding: 0;
     }  
-    li{
+    
+    >ul {
+        >li{
         display: inline-block;
-        ul {
+        position: relative;
+        
+        >ul {
             display: none;
+        
         }
-        &:hover ul {
+        &:hover>ul {
             display: block;
+            position: absolute;
+            top: 2rem;
+            
+            >li{
+                display: block;
+                >ul {
+                    /* display:none; */
+                }
+            &:hover>ul {
+                    display: block;
+                    position: absolute;
+                    top: 2rem;
+                    left:4rem;
+            }     
+                
+            } 
+
         }
+    }
     }        
     a {
         color: inherit;
