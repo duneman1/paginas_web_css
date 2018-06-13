@@ -1,0 +1,42 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin-left: 20%;
+}
+
+div {
+  /* position: relative; */
+  /*para ver el absoluto*/
+  width: 50%;
+  background-color: salmon;
+  padding: 1rem;
+  margin: 1rem;
+}
+div p {
+  padding: 2rem;
+  background-color: lightblue;
+}
+
+.relative {
+  position: relative;
+  top: 5rem;
+  left: 5rem;
+}
+
+.absolute {
+  margin: 0;
+  /* position: absolute; */
+  position: fixed;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  width: 20%;
+}
+
+footer {
+  text-align: center;
+}
+
+/*# sourceMappingURL=css/style.css.map */

@@ -2,6 +2,25 @@
     box-sizing: border-box;
 }
 
+@mixin reset($tipo: full) {
+    @if ($tipo==full) 
+    {
+        margin: 0;
+        padding: 0;    
+    } @else if ($tipo==vert) {
+        padding-top: 0;
+        padding-bottom: 0;
+        margin-top: 0;
+        margin-bottom: 0;
+    }
+    
+}
+
+body {
+    @include reset();
+}
+
+
 header {
     position: relative;
     
@@ -35,7 +54,12 @@ header {
         position: relative;
         clear: both;
         text-align: center;
-        padding-top: 40vh;
+        /* padding-top: 0;
+        padding-bottom: 0;
+        margin-top: 0;
+        margin-bottom: 0; */
+        @include reset(vert);
+        line-height: 100vh;
         font-family: 'Oswald', sans-serif;
         font-size: 2.5rem;
         color: white;
@@ -47,20 +71,34 @@ header {
 }
 
 nav {
-    position: relative;
-    width: 50%;
-    float: right;
+    /* position: relative; */
+    /* width: 50%; */ /* No hace falta, porque flota a la derecha y cierra el espacio*/
+    /* float: right; */
+    position: fixed;
+    top: 0;
+    right: 0;
+    background-image: url('../assets/home-bg.jpg');
+    background-position: top right;
     ul{
-        list-style: none;
-        li{
-            display: inline-block;
-            a {
-                color: inherit;
-                text-decoration: none;
-                padding: 1.5rem 2rem;
-            }
+        list-style: none;  
+        padding: 0;
+    }  
+    li{
+        display: inline-block;
+        ul {
+            display: none;
         }
-    }
+        &:hover ul {
+            display: block;
+        }
+    }        
+    a {
+        color: inherit;
+        text-decoration: none;        
+        padding: 1.5rem 2rem;                
+    }              
+    
+    
 }
 
 main {
