@@ -1,0 +1,53 @@
+body {
+  background-color: lightgray;
+  color: brown;
+}
+
+h1 {
+  font-family: "Lobster", cursive;
+}
+
+footer {
+  border-top: 1px solid;
+  margin-top: 2rem;
+  padding-top: 1rem;
+  text-align: center;
+}
+
+@media screen and (min-width: 620px) {
+  /* body {
+      background-color: aquamarine;
+      color: brown;
+  } */
+  h1 {
+    font-size: 2.3rem;
+  }
+
+  section {
+    padding-left: 1rem;
+    padding: 1rem;
+    flex: 0 1 75%;
+  }
+
+  aside {
+    padding-left: 1rem;
+    padding: 1rem;
+    flex: 0 1 25%;
+  }
+}
+@media screen and (min-width: 820px) {
+  h1 {
+    font-size: 3rem;
+  }
+
+  .wrapper_flex {
+    display: flex;
+  }
+
+  section .wrapper_column {
+    column-count: 2;
+    column-gap: 2rem;
+  }
+}
+
+/*# sourceMappingURL=css/style.css.map */

@@ -1,0 +1,22 @@
+* {
+    box-sizing: border-box;
+}
+
+html {
+    background-color: cornsilk;
+}
+/* body {
+    height: 100%;
+} */
+section {
+    border: 1px solid;
+    width: 100px;
+    height: 200px;
+}
+div {
+    background-color: salmon;
+    border: 1px solid;
+    height: 20%;
+    width: 20%;
+    margin: 50%;
+}
