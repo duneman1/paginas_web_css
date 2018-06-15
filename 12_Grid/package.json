@@ -1,0 +1,19 @@
+{
+  "name": "12",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "start": "parallelshell \"npm run server\" \"npm run sass:watch \"",
+    "server": "http-server ../",
+    "sass": "sass scss:css",
+    "sass:watch": "nodemon -e scss -x \"sass scss:css\""
+  },
+  "keywords": [
+    "HTML",
+    "CSS",
+    "JS"
+  ],
+  "author": "",
+  "license": "ISC"
+}

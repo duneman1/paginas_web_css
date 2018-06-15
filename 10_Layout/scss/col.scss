@@ -117,16 +117,10 @@ section {
     float: left;
     padding-right: 3rem; 
 
-    h2 {
-        padding-left: 1rem;
-        padding-right: 1rem;
-    }
-
     div {
-        width: 50%;
-        float: left;
-        padding-left: 1rem;
-        padding-right: 1rem;
+        column-count: 2;
+        column-gap: 3rem;
+        column-rule: 1px solid;
 
         p:nth-of-type(1) {
             margin-top: 0;

@@ -1,0 +1,84 @@
+/* Reset */
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 5%;
+}
+
+p {
+    margin: 0;
+    padding: 0;
+}
+
+/* Layout */
+
+p {
+    width: 22%;
+    padding: 1.5rem;    
+}
+
+p:not(:last-child) {
+    margin-right: 3%;
+} 
+
+
+p:nth-child(odd) {
+    background-color: aqua;
+    border: 1px solid bisque;
+}
+
+p:nth-child(even) {
+    background-color: bisque;
+    border: 1px solid aqua;
+}
+
+section {
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+    background-color: crimson;
+    border: 2px solid;
+    /* overflow: auto; */
+}
+
+section::after{
+    content: "";
+    display: block;
+    clear: both;
+}
+
+section.inline-block p {
+    display: inline-block;
+    vertical-align: middle;
+}
+
+section.float p {
+    float: left;
+}
+
+.clearfix {
+    clear: both;
+}
+
+span {
+    font-size: 5rem;
+}
+
+blockquote {
+    color: bisque;
+    font-weight: 900;
+}
+
+section.table {
+    display: table
+
+}
+section.table div {
+    display: table-row;
+}
+section.table div p {
+    display: table-cell;
+    vertical-align: middle;
+}
