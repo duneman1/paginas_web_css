@@ -1,5 +1,5 @@
-$color_main: brown;
-$color_back: lightgray;
+$color_main: bisque;
+$color_back: brown;
 
 body {
     background-color: $color_back;
@@ -43,10 +43,10 @@ nav.menu-desk {
             background-color: $color_back;
             color: $color_main;
         }
-    }
+    }  
 }
 nav.hide-menu {
-    display:none;
+    display: none;
 }
 
 section {
@@ -61,15 +61,10 @@ footer {
     margin-top: 2rem;
     padding-top: 1rem;
     text-align: center;
-
-
 }
 
-@media screen and (min-width:620px) /* and (max-width:767px) */ {
-    /* body {
-        background-color: aquamarine;
-        color: brown;
-    } */
+
+@media screen and (min-width:620px ) {
     h1 { 
         font-size: 2.3rem;
         padding-left: 1rem;
@@ -87,9 +82,10 @@ footer {
             flex: 0 1 25%;
         }
     }
+
     section {
-        figure{
-            margin-left: 0;
+        figure {
+            margin: 0;
         }
     }
 }
@@ -123,7 +119,7 @@ footer {
                 &:hover ul {
                 display: block;
                 }
-            }
+            } 
         }
         a {
             padding: 0.5rem  1rem;
@@ -137,9 +133,9 @@ footer {
         .submenu {
             display: none;
             position: absolute;
-            top:2rem;
-            left:-2rem;
-            background-color:aquamarine;
+            top: 2rem;
+            left: -2rem;
+            background-color: rgba(165, 53, 53, 0.5 )
         }
     }
 
@@ -157,7 +153,7 @@ footer {
         }
     }
     section {
-        background-color: aquamarine;
+        background-color: rgb(146, 73, 73);
         h2 {
             padding-left: 1rem;
         }

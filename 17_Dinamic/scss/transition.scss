@@ -1,0 +1,22 @@
+header {
+    border: 1px solid;
+}
+  
+
+h1 {
+    font-size: 2rem;
+    color: gold;
+    opacity:  0.5;
+    
+    /* transition-property: font-size color;
+    transition-duration: 2000ms; */ /*Tiempo que tarda en hacer la transicion*/
+    /* transition-delay: 500ms; */ /*Tiempo que tarda en saltar la transición*/
+    /* transition-timing-function: cubic-bezier(0.83, 0.76, 0.42, 1.45); */
+    /* transition: font-size 2s linear, color 1s ease;  *//*transition: (propiedad) (tiempo) (funcion) (retraso)*/
+    transition: all 3s linear;
+    &:hover {
+        font-size: 3rem;
+        color: orange;
+        opacity: 1;
+    }
+}

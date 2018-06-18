@@ -1,6 +1,6 @@
 body {
-  background-color: lightgray;
-  color: brown;
+  background-color: brown;
+  color: bisque;
 }
 
 header {
@@ -26,8 +26,8 @@ nav a {
 
 nav.menu-mobile,
 nav.menu-desk {
-  background-color: brown;
-  color: lightgray;
+  background-color: bisque;
+  color: brown;
 }
 nav.menu-mobile a,
 nav.menu-desk a {
@@ -38,8 +38,8 @@ nav.menu-desk a {
 }
 nav.menu-mobile a:hover,
 nav.menu-desk a:hover {
-  background-color: lightgray;
-  color: brown;
+  background-color: brown;
+  color: bisque;
 }
 
 nav.hide-menu {
@@ -59,10 +59,6 @@ footer {
 }
 
 @media screen and (min-width: 620px) {
-  /* body {
-      background-color: aquamarine;
-      color: brown;
-  } */
   h1 {
     font-size: 2.3rem;
     padding-left: 1rem;
@@ -83,7 +79,7 @@ footer {
   }
 
   section figure {
-    margin-left: 0;
+    margin: 0;
   }
 }
 @media screen and (min-width: 820px) {
@@ -101,8 +97,8 @@ footer {
 
   nav.menu-desk {
     display: block;
-    background-color: lightgray;
-    color: brown;
+    background-color: brown;
+    color: bisque;
     position: absolute;
     right: 0;
     top: 1.2rem;
@@ -121,15 +117,15 @@ footer {
     display: block;
   }
   nav.menu-desk a:hover {
-    background-color: brown;
-    color: lightgray;
+    background-color: bisque;
+    color: brown;
   }
   nav.menu-desk .submenu {
     display: none;
     position: absolute;
     top: 2rem;
     left: -2rem;
-    background-color: aquamarine;
+    background-color: rgba(165, 53, 53, 0.5);
   }
 
   .wrapper_columns {
@@ -147,11 +143,11 @@ footer {
   }
 
   section {
-    background-color: aquamarine;
+    background-color: #924949;
   }
   section h2 {
     padding-left: 1rem;
   }
 }
 
-/*# sourceMappingURL=css/style.css.map */
+/*# sourceMappingURL=css/profesor.css.map */
