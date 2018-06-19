@@ -4,6 +4,7 @@ header {
   
 
 h1 {
+   
     font-size: 2rem;
     color: gold;
     opacity:  0.5;
@@ -15,6 +16,7 @@ h1 {
     /* transition: font-size 2s linear, color 1s ease;  *//*transition: (propiedad) (tiempo) (funcion) (retraso)*/
     transition: all 3s linear;
     &:hover {
+        
         font-size: 3rem;
         color: orange;
         opacity: 1;

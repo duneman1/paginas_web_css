@@ -1,0 +1,63 @@
+body {
+  margin: 2rem;
+}
+
+div {
+  margin: 2rem;
+  width: 10rem;
+  height: 10rem;
+  /* animation: name duration timing-function delay iteration-count direction fill-mode; */
+  animation-name: colors, rotacion;
+  animation-duration: 3s;
+  animation-timing-function: linear;
+  animation-delay: 1s;
+  animation-iteration-count: infinite;
+  animation-direction: alternate;
+  animation-fill-mode: forwards;
+}
+
+@keyframes colors {
+  0% {
+    background-color: red;
+  }
+  20% {
+    background-color: orange;
+    width: 12rem;
+  }
+  40% {
+    background-color: yellow;
+    width: 14rem;
+  }
+  60% {
+    background-color: green;
+    width: 16rem;
+  }
+  80% {
+    background-color: blue;
+  }
+  100% {
+    background-color: purple;
+  }
+}
+@keyframes rotacion {
+  0% {
+    transform: rotate(0deg);
+  }
+  25% {
+    transform: rotate(15deg);
+  }
+  50% {
+    transform: rotate(-5deg);
+  }
+  55% {
+    transform: rotate(0deg);
+  }
+  75% {
+    transform: rotate(-10deg);
+  }
+  100% {
+    transform: rotate(0deg);
+  }
+}
+
+/*# sourceMappingURL=css/animation.css.map */
