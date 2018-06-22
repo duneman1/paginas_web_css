@@ -8,6 +8,7 @@
     <meta name="description" content="España Madrid">
     <meta name="athor" content="Jose Maria">
     <meta name="creator" content="VSC">
+    <link href="https://fonts.googleapis.com/css?family=Eater|Gloria+Hallelujah|Oswald" rel="stylesheet"> 
     <link rel="stylesheet" href="./css/proyecto.css">
     <link rel="shortcut icon" href="./favicon.png" type="image/x-icon">
     <title>Inicio - España / Madrid </title>
@@ -15,33 +16,35 @@
 
 <body>
     <header>
-        <h1 class="inicio">Madrid</h1>
+        <h1 id="inicio">Madrid</h1>
     </header>
     <main>
-    <nav>
-        <ul>
-            <li>
-                <a href="#inicio">Inicio</a>
-            </li>
-            <li>
-                <a href="#geo">Geografía</a>
-            </li>
-            <li>
-                <a href="#histo">Historia</a>
-            </li>
-            <li>
-                <a href="#eco">Economia</a>
-            </li>
-            <li>
-                <a href="./about.html">Acerca de</a>
-            </li>
-        </ul>
-    </nav>
-    
+        <nav>
+            <ul>
+                <li>
+                    <a href="#inicio">Inicio</a>
+                </li>
+                <li>
+                    <a href="#geo">Geografía</a>
+                </li>
+                <li>
+                    <a href="#histo">Historia</a>
+                </li>
+                <li>
+                    <a href="#eco">Economia</a>
+                </li>
+                <li>
+                    <a href="./about.html">Acerca de</a>
+                </li>
+            </ul>
+        </nav>
+
         <article>
-            <section class="intro">
+            <section id="intro">
                 <h2>Introducción</h2>
-                <img src="./assets/Bandera_de_Madrid.svg" alt="Bandera de madrid" title="La badera de Madrid">
+                <div class="imagen">
+                    <img src="./assets/Bandera_de_Madrid.svg" alt="Bandera de madrid" title="La badera de Madrid">
+                </div>
                 <table>
 
                     <tbody>
@@ -83,12 +86,13 @@
                     </p>
                 </div>
             </section>
-            <section class="geo">
+            <section id="geo">
                 <h2>
                     Geografía
                 </h2>
-                <img src="./assets/EspañaLoc.svg" alt="Mapa de españa" title="Mapa de españa donde esta ubicado madrid" width="400px">
-
+                <div class="imagen">
+                    <img src="./assets/EspañaLoc.svg" alt="Mapa de españa" title="Mapa de españa donde esta ubicado madrid" width="400px">
+                </div>
                 <p>
                     La ciudad de Madrid se encuentra en la zona central de la península ibérica, a pocos kilómetros al norte del cerro de los
                     Ángeles, centro geográfico de la Península. Las coordenadas de la ciudad son 40°26′N 3°41′O. El centro
@@ -105,11 +109,13 @@
                     </p>
                 </div>
             </section>
-            <section class="histo">
+            <section id="histo">
                 <h2>
                     Historia
                 </h2>
-                <img src="./assets/Vista_de_Madrid_con_vendedor_de_pájaros.jpg" alt="Vista de Madrid" title="Vista de madrid con vendedor de pajaros">
+                <div>
+                    <img src="./assets/Vista_de_Madrid_con_vendedor_de_pájaros.jpg" alt="Vista de Madrid" title="Vista de madrid con vendedor de pajaros">
+                </div>
                 <p>
                     Los orígenes de la ciudad son objeto de revisión tras los recientes hallazgos, en su perímetro más antiguo, de enterramientos
                     visigodos así como de restos que se remontan a los carpetanos o periodo prerromano. Las excavaciones
@@ -144,7 +150,7 @@
                     </p>
                 </div>
             </section>
-            <section class="eco">
+            <section id="eco">
                 <h2>
                     Economía
                 </h2>
