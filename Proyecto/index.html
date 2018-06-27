@@ -11,15 +11,20 @@
     <link href="https://fonts.googleapis.com/css?family=Eater|Gloria+Hallelujah|Oswald" rel="stylesheet">
     <link rel="stylesheet" href="./css/proyecto.css">
     <link rel="shortcut icon" href="./favicon.png" type="image/x-icon">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.13/css/all.css">
     <title>Inicio - España / Madrid </title>
 </head>
 
 <body>
     <header>
         <h1 id="inicio">Madrid</h1>
+
     </header>
     <main>
-        <nav>
+        <nav class="menu-mobile">
+            <a class="fas fa-bars" href="#bottom-menu"></a>
+        </nav>
+        <nav id="top-menu" class="hide-menu menu-desk">
             <ul>
                 <li>
                     <a href="#inicio">Inicio</a>
@@ -74,7 +79,9 @@
                         <tr>
                             <th>Ubicación</th>
 
-                            <td> <a href="http://tools.wmflabs.org/geohack/geohack.php?language=es&pagename=Madrid&params=40.418888888889_N_-3.6919444444444_E_type:city">40°25′08″N 3°41′31″O</a></td>
+                            <td>
+                                <a href="http://tools.wmflabs.org/geohack/geohack.php?language=es&pagename=Madrid&params=40.418888888889_N_-3.6919444444444_E_type:city">40°25′08″N 3°41′31″O</a>
+                            </td>
                         </tr>
                         <tr>
                             <th>Altitud</th>
@@ -204,12 +211,31 @@
                         <a href="#inicio">Ir a inicio</a>
                     </p>
                 </div>
-            </section>
 
         </article>
+        </section>
         <aside>
 
         </aside>
+        <nav id="bottom-menu" class="menu-mobile">
+            <ul>
+                <li>
+                    <a href="#inicio">Inicio</a>
+                </li>
+                <li>
+                    <a href="#geo">Geografía</a>
+                </li>
+                <li>
+                    <a href="#histo">Historia</a>
+                </li>
+                <li>
+                    <a href="#eco">Economia</a>
+                </li>
+                <li>
+                    <a href="./about.html">Acerca de</a>
+                </li>
+            </ul>
+        </nav>
     </main>
     <footer>
         <address>
