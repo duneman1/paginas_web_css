@@ -8,35 +8,179 @@
     <meta name="description" content="España Madrid">
     <meta name="athor" content="Jose Maria">
     <meta name="creator" content="VSC">
+    <link href="https://fonts.googleapis.com/css?family=Eater|Gloria+Hallelujah|Oswald" rel="stylesheet">
     <link rel="stylesheet" href="./css/proyecto.css">
     <link rel="shortcut icon" href="./favicon.png" type="image/x-icon">
-    <title>About - España / Madrid </title>
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.13/css/all.css">
+    <title>Inicio - España / Madrid </title>
 </head>
 
 <body>
-    <nav>
-        <ul>
-            <li>
-                <a href="./index.html#inicio">Inicio</a>
-            </li>
-            <li>
-                <a href="./index.html#geo">Geografía</a>
-            </li>
-            <li>
-                <a href="./index.html#histo">Historia</a>
-            </li>
-            <li>
-                <a href="./index.html#eco">Economia</a>
-            </li>
-            <li>
-                <a href="./about.html">Acerca de</a>
-            </li>
-        </ul>
-        <footer>
-            <address>
+    <header>
+        <h1 id="inicio">Madrid</h1>
+
+    </header>
+    <main>
+        <nav class="menu-mobile">
+            <a class="fas fa-bars" href="#bottom-menu"> Menu</a>
+        </nav>
+        <nav id="top-menu" class="hide-menu menu-desk">
+            <ul>
+                <li>
+                    <a href="./index.html#inicio">Inicio</a>
+                </li>
+                <li>
+                    <a href="./index.html#geo">Geografía</a>
+                </li>
+                <li>
+                    <a href="./index.html#histo">Historia</a>
+                </li>
+                <li>
+                    <a href="./index.html#eco">Economia</a>
+                </li>
+                <li>
+                    <a href="./about.html">Acerca de</a>
+                </li>
+            </ul>
+        </nav>
+        <article>
+            <h2 class="center">
+                Sobre nosotros
+            </h2>
+            <p class="center">
+                Esto es un proyecto informativo, en el cual se han usado datos de Madrid, de la
+                <a href="https://es.wikipedia.org/wiki/Madrid" title="Wikipedia Madrid">Wikipedia</a>.
+            </p>
+            <p class="center">
+                Para cualquier aclaración, reclamación o colaboración, rellenar el siguiente formulario de contacto:</p>
+
+            </p>
+            <form action="">
+                <fieldset>
+                    <div class="control_group">
+                        <label for="nombre">Nombre: </label>
+                        <input type="text" name=nombre " id=nombre" placeholder="Nombre completo" required>
+                    </div>
+                    <div class="control_group">
+                        <label for="apellido">Apellidos: </label>
+                        <input type="text" name="apellidos" id="apellidos" placeholder="Apellidos completos">
+                    </div>
+                    <div class="control_group">
+                        <label for="correo">Correo: </label>
+                        <input type="email" name="correo" id="correo" placeholder="Correo Electronico" required>
+                    </div>
+                    <div class="textarea_group">
+                        <label for="info">Mensaje: </label>
+                        <textarea name="info" id="info" required></textarea>
+                    </div>
+                    <div class="check_group">
+                        <label for="accepted"><input type="checkbox" name="accepted" id="accepted" required> 
+                            Leidas y aceptadas las condiciones
+                        </label>
+                        
+
+                    </div>
+                    <div class="check_group">
+                        <label for="cookies"><input type="checkbox" name="cookies" id="cookies" required> 
+                            Acepto cookies
+                            
+                        </label>
+                    </div>
+
+                    <button type="submit" title="Enviar">Enviar
+                        <i class="fas fa-share-square"></i>
+                    </button>
+                    <button type="reset" title="Borrar todo el contenido">Limpiar campos 
+                        <i class="fas fa-eraser"></i>
+                </fieldset>
+            </form>
+        </article>
+
+        <aside>
+
+        </aside>
+        <nav id="bottom-menu" class="menu-mobile pie">
+            <ul>
+                <li>
+                    <a href="./index.html#inicio">Inicio</a>
+                </li>
+                <li>
+                    <a href="./index.html#geo">Geografía</a>
+                </li>
+                <li>
+                    <a href="./index.html#histo">Historia</a>
+                </li>
+                <li>
+                    <a href="./index.html#eco">Economia</a>
+                </li>
+                <li>
+                    <a href="./about.html">Acerca de</a>
+                </li>
+            </ul>
+        </nav>
+    </main>
+    <footer>
+        <address>
+            <div class="footer1">
+                Jose Maria
+                <br>- duneman.basura@gmail.com -
+                <br> &copy; yo y yo
+            </div>
+
+            <div class="footer2">
                 Jose Maria - duneman.basura@gmail.com - &copy; yo y yo
-            </address>
-        </footer>
+            </div>
+            <div hidden>
+                <div id="hcard-CFTIC" class="vcard">
+                    <img style="float:left; margin-right:4px" src="./assets/centro_de_formacion_100px.jpg" alt="Foto de CFTIC" class="photo"
+                    />
+                    <span class="fn n">
+                        <span class="given-name">Centro de Formación en Tecnologías de la Información y las Comunicaciones</span>
+
+                    </span>
+                    <div class="org">CFTIC</div>
+                    <a class="url" href="https://cftic.centrosdeformacion.empleo.madrid.org/">CFTIC</a>
+                    <a class="email" href="mailto:centrof.madridsur@madrid.org">centrof.madridsur@madrid.org</a>
+                    <div class="adr">
+
+                        <div class="street-address">Centro de Formación en Tecnologías de la Información y las Comunicaciones, Av. de las Arcas del Agua,
+                            2
+                        </div>
+
+                        <span class="locality">Getafe</span>
+                        ,
+                        <span class="region">Madrid</span>
+                        ,
+                        <span class="postal-code">28905</span>
+
+                        <span class="country-name">Spain</span>
+
+                    </div>
+                    <div class="tel">916 83 81 60</div>
+                    <div>
+                        <span class="category">Certificados de profesionalidad</span>,
+                        <span class="category">Cursos</span>,
+                    </div>
+
+                </div>
+            </div>
+            <div itemscope itemtype="http://schema.org/WebSite http://schema.org/Person http://schema.org/PostalAddress http://schema.org/CreativeWork">
+                <meta itemprop="name" content="Centro de Formación en Tecnologías de la Información y las Comunicaciones" />
+                <meta itemprop="alternateName" content="CFTIC" />
+                <meta itemprop="url" content="https://cftic.centrosdeformacion.empleo.madrid.org/" />
+                <meta itemprop="email" content="centrof.madridsur@madrid.org" />
+                <meta itemprop="telephone" content="916 83 81 60" />
+                <meta itemprop="address" content="Av. de las Arcas del Agua, 2" />
+                <meta itemprop="addressLocality" content="Getafe" />
+                <meta itemprop="addressRegion" content="Madrid" />
+                <meta itemprop="postalCode" content="28905" />
+                <meta itemprop="addressCountry" content="Spain" />
+                <meta itemprop="image" content="./assets/centro_de_formacion_100px.jpg" />
+                <meta itemprop="keywords" content="Certificados de profesionalidad,Cursos" />
+
+            </div>
+        </address>
+    </footer>
 </body>
 
 </html>

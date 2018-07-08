@@ -33,18 +33,17 @@ header {
 
 }
 
+.fa-bars {
+    font-size: 2rem;
+}
+
 nav {
     margin-top: 1rem;
-    
+    margin-bottom: 1rem;
+    padding-bottom: 1rem; 
+    border-bottom: solid 1px #333;
 }
-/* nav ul {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    align-items: center;
-    list-style: none;
 
-} */
 
 nav ul {
     display: flex;
@@ -55,6 +54,7 @@ nav ul {
 nav a {
     color: inherit;
     text-decoration: none;
+    transition: 0.5s;
     
     
 }
@@ -73,6 +73,9 @@ nav.hide-menu {
     display: block;
 }
 
+.pie {
+    border:none;
+}
 
 h1 {
     text-align: center;
@@ -134,19 +137,51 @@ div.imagen_eco {
     max-width: 974px;
     
 } 
+p {
+    text-align: justify;
+}
+
+.center { text-align: center;}
+
+form {
+    text-align: center;
+    
+}
+
+fieldset {
+    border-radius: 0px 40px 0px 40px;
+    background-color: rgba(67, 182, 228, 0.445);
+}
+
+label {
+    display: block;
+    text-align: left;
+    padding-left: 15%;
+}
+
+input[type="text"], input[type="email"], textarea {
+    width: 70%;
+    padding: 0.5rem;
+    border-radius: 10px;
+
+}
 
 footer {
+    
     text-align: center;
     margin-top: 2rem;
     padding-bottom: 1rem;
     padding-top: 1rem; 
     font-family: 'Eater', cursive;
     border-top: 2px solid salmon;
+    font-size: 1rem;
 }
 
-p {
-    text-align: justify;
+
+.footer2 {
+    display: none;
 }
+
 .clearfix {
     clear: both;
 }
@@ -181,6 +216,12 @@ p {
         float: right;
         width: 54%;
         min-width: 54%;
+    }
+    .footer1 {
+        display: none;
+    }
+    .footer2 {
+        display: inline;
     }
     
 }
