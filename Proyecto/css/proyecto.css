@@ -65,6 +65,13 @@ nav.menu-desk a:hover {
     text-decoration: overline underline ;
 }
 
+div.caja_movil {
+    width: 40%;
+    background-color: cornsilk;
+    padding-left: 1rem;
+    display: none
+}
+    
 nav.hide-menu {
   display: none;
 }

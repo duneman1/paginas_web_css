@@ -19,3 +19,14 @@
 
 - RWD -> mobile-first
 - Mínimo 3 MediaQueries
+
+# Añadir en JavaScript #
+
+- menu responsive con click
+
+- menu en escritori sensible al scroll
+
+- validar un formulario de contacto
+
+- opcionalmente añadir un carrusel
+
