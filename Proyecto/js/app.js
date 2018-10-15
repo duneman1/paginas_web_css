@@ -1,7 +1,8 @@
 class Main {
     constructor (){
-        this.menu_boton = document.querySelectorAll ('.oculto')
-        this.document.addEventListener ('click', this.abrir_cerrar.bind(this))
+        this.menu_boton = document.querySelector ('.oculto')
+
+        this.menu_boton.addEventListener ('click', this.abrir_cerrar.bind(this))
     }
 
     abrir_cerrar(oE) {
@@ -11,7 +12,7 @@ class Main {
 
 
 
-document.addEventListener('DOMContentLoaded', () => { new Main})
+document.addEventListener('DOMContentLoaded', () => { new Main()})
 
         this.aBtnMas = document.querySelectorAll('.mas')
         this.textoMas = document.querySelector('.hide')
