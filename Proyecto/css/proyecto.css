@@ -66,14 +66,30 @@ nav.menu-desk a:hover {
 }
 
 div.caja_movil {
+    position: fixed;
     width: 40%;
     background-color: cornsilk;
-    padding-left: 1rem;
+    padding-left: 1rem
+}
+div.caja_movil_hide {
     display: none
 }
     
 nav.hide-menu {
   display: none;
+}
+
+.irArriba {
+    
+    display: none;
+    width: 50px;
+    height: 50px;
+    cursor: pointer;
+    text-align: center;
+    overflow: hidden;
+    position: fixed;
+    bottom: 10px;
+    right: 1%;
 }
 
 .mostrar:hover{

@@ -12,6 +12,7 @@
     <link rel="stylesheet" href="./css/proyecto.css">
     <link rel="shortcut icon" href="./favicon.png" type="image/x-icon">
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.13/css/all.css">
+    <script src="./js/app.js"></script>
     <title>Inicio - España / Madrid </title>
 </head>
 
@@ -21,9 +22,32 @@
 
     </header>
     <main>
-        <nav class="menu-mobile">
-            <a class="fas fa-bars" href="#bottom-menu"> Menu</a>
+        </nav><nav class="menu-mobile">
+            <a class="fas fa-bars" href="#bottom-menu" id="btnHamburguesa"> Menu</a>
+            
+            
         </nav>
+        <div class="caja_movil caja_movil_hide">
+        <nav id="bottom-menu" class="menu-mobile pie">
+            <ul>
+                <li>
+                    <a href="./index.html#inicio" class="caja_movil_hide">Inicio</a>
+                </li>
+                <li>
+                    <a href="./index.html#geo" class="caja_movil_hide">Geografía</a>
+                </li>
+                <li>
+                    <a href="./index.html#histo" class="caja_movil_hide">Historia</a>
+                </li>
+                <li>
+                    <a href="./index.html#eco" class="caja_movil_hide">Economia</a>
+                </li>
+                <li>
+                    <a href="./about.html">Acerca de</a>
+                </li>
+            </ul>
+        </nav>
+    </div>
         <nav id="top-menu" class="hide-menu menu-desk">
             <ul>
                 <li>
@@ -43,6 +67,7 @@
                 </li>
             </ul>
         </nav>
+
         <article>
             <h2 class="center">
                 Sobre nosotros
@@ -99,25 +124,6 @@
         <aside>
 
         </aside>
-        <nav id="bottom-menu" class="menu-mobile pie">
-            <ul>
-                <li>
-                    <a href="./index.html#inicio">Inicio</a>
-                </li>
-                <li>
-                    <a href="./index.html#geo">Geografía</a>
-                </li>
-                <li>
-                    <a href="./index.html#histo">Historia</a>
-                </li>
-                <li>
-                    <a href="./index.html#eco">Economia</a>
-                </li>
-                <li>
-                    <a href="./about.html">Acerca de</a>
-                </li>
-            </ul>
-        </nav>
     </main>
     <footer>
         <address>
@@ -181,6 +187,7 @@
             </div>
         </address>
     </footer>
+    <span class="irArriba"><img src="./assets/flecha.gif" alt="Flecha de subir" title="subir"></span>
 </body>
 
 </html>

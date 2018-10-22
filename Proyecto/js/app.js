@@ -1,58 +1,44 @@
 class Main {
     constructor (){
-        this.menu_boton = document.querySelector ('.oculto')
-
+        //menu desplegable en modo movil
+        this.menu_boton = document.querySelector ('#btnHamburguesa')
+        this.caja_menu = document.querySelector ('.caja_movil_hide')
+        this.option_menu = document.querySelector ('.caja_movil_hide')
         this.menu_boton.addEventListener ('click', this.abrir_cerrar.bind(this))
+        this.option_menu.addEventListener ('click', this.abrir_cerrar.bind(this))
+
+        //boton subir
+        this.btnSubir = document.querySelector ('.irArriba')
+        this.btnSubir.addEventListener ('click', this.subir.bind(this))
+        document.addEventListener ('scroll', this.scrollDectect.bind(this))
     }
 
-    abrir_cerrar(oE) {
-        console.log(oE)
+    abrir_cerrar() {
+        //console.log(oE)
+        if(this.caja_menu.classList.contains('caja_movil_hide')) {
+            this.caja_menu.classList.remove('caja_movil_hide')
+        } else {
+            this.caja_menu.classList.add('caja_movil_hide')
+        }
+    }
+    
+
+    scrollDectect(oE) {
+        if (oE.target.scrollingElement.scrollTop>50) {
+            this.btnSubir.style.display = 'block'
+        } else {
+            this.btnSubir.style.display = 'none'
+        }
+    }
+    
+    subir() {
+        window.scroll({
+            top: 0,
+            behavior: 'smooth'
+        })
     }
 }
 
 
 
 document.addEventListener('DOMContentLoaded', () => { new Main()})
-
-        this.aBtnMas = document.querySelectorAll('.mas')
-        this.textoMas = document.querySelector('.hide')
-
-
-        this.aBtnMas.forEach(
-            (btn) => { btn.addEventListener('click', this.mostrar.bind(this)) }
-        )
-
-    }
-
-    mostrar(oE) {
-
-        // un solo objeto
-        /* if(this.textoMas.classList.contains('hide')) {
-            this.textoMas.classList.remove('hide')
-        } else {
-            this.textoMas.classList.add('hide')
-        } // toggle lo hace esto */
-
-
-        /* this.textoMas.classList.toggle('hide')
-
-        if(this.textoMas.classList.contains('hide')) {
-            this.btnMas.textContent = "Ver más"
-        } else {
-            this.btnMas.textContent = "Ver menos"
-        } */
-
-        //varios eventos
-        console.log(oE)
-        let nodoBtn = oE.target
-        let nodoTxt = nodoBtn.previousElementSibling
-        nodoTxt.classList.toggle('hide')
-        if (nodoTxt.classList.contains('hide')) {
-            // boton = Ver mas 
-            nodoBtn.textContent = "Ver más"
-        } else {
-            // boton = Ocultar
-            nodoBtn.textContent = "Ver menos"
-        }
-    }
-}

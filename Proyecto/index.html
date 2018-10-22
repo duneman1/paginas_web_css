@@ -23,24 +23,24 @@
     </header>
     <main>
         <nav class="menu-mobile">
-            <a class="fas fa-bars oculto" href="#bottom-menu" > Menu</a>
+            <a class="fas fa-bars" href="#bottom-menu" id="btnHamburguesa"> Menu</a>
             
             
         </nav>
-        <div class="caja_movil">
+        <div class="caja_movil caja_movil_hide">
         <nav id="bottom-menu" class="menu-mobile pie">
             <ul>
                 <li>
-                    <a href="#inicio">Inicio</a>
+                    <a href="#inicio" class="caja_movil_hide">Inicio</a>
                 </li>
                 <li>
-                    <a href="#geo">Geografía</a>
+                    <a href="#geo" class="caja_movil_hide">Geografía</a>
                 </li>
                 <li>
-                    <a href="#histo">Historia</a>
+                    <a href="#histo" class="caja_movil_hide">Historia</a>
                 </li>
                 <li>
-                    <a href="#eco">Economia</a>
+                    <a href="#eco" class="caja_movil_hide">Economia</a>
                 </li>
                 <li>
                     <a href="./about.html">Acerca de</a>
@@ -67,7 +67,7 @@
                 </li>
             </ul>
         </nav>
-
+        
         <article>
             <section id="intro">
                 <h2>Introducción</h2>
@@ -143,11 +143,6 @@
                     y Londres, y en algunas fuentes detrás también de la Región del Ruhr, así como la tercera ciudad
                     más
                     poblada de la Unión Europea, por detrás de Berlín y Londres.</p>
-                <div>
-                    <p>
-                        <a href="#inicio">Ir a inicio</a>
-                    </p>
-                </div>
             </section>
             <section id="geo">
                 <h2>
@@ -174,11 +169,6 @@
                     hidrográficamente
                     se encuentra emplazada en la cuenca del Tajo.
                 </p>
-                <div>
-                    <p>
-                        <a href="#inicio">Ir a inicio</a>
-                    </p>
-                </div>
             </section>
             <section id="histo">
                 <h2>
@@ -244,11 +234,7 @@
                     Burgos
                     la ciudad que ostenta la capitalidad
                 </p>
-                <div>
-                    <p>
-                        <a href="#inicio">Ir a inicio</a>
-                    </p>
-                </div>
+                
             </section>
             <section id="eco">
                 <h2>
@@ -280,11 +266,6 @@
                     comercio
                     de Europa (tras Londres, París, Fráncfort y Ámsterdam) y el 11° a nivel mundial
                 </p>
-                <div>
-                    <p>
-                        <a href="#inicio">Ir a inicio</a>
-                    </p>
-                </div>
 
         </article>
         </section>
@@ -355,6 +336,7 @@
             </div>
         </address>
     </footer>
+    <span class="irArriba"><img src="./assets/flecha.gif" alt="Flecha de subir" title="subir"></span>
 </body>
 
 </html>
