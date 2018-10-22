@@ -29,6 +29,8 @@ class Main {
         } else {
             this.btnSubir.style.display = 'none'
         }
+        this.caja_menu.classList.add('caja_movil_hide')
+        
     }
     
     subir() {
